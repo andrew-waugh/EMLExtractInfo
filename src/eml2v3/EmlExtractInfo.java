@@ -382,6 +382,7 @@ public class EmlExtractInfo {
         } catch (IOException ioe) {
             LOG.log(Level.SEVERE, "IO error:\n{0}", new Object[]{ioe.getMessage()});
         } finally {
+            e = null;
             System.gc();
         }
     }
